@@ -1,0 +1,77 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Lightgray: hsl(212, 45%, 89%);
+    --Grayishblue: hsl(220, 15%, 55%);
+    --Darkblue: hsl(218, 44%, 22%);
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    body{
+        max-width: 100%;
+    }
+}
+/* GLOBALES */
+
+
+p{
+    font-size: 1.5rem;
+    color: var(--Grayishblue);
+    font-weight: bold;
+}
+
+
+.contenedor{
+    background-color: var(--Lightgray);
+    width: 100%;
+    height: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+}
+
+@media (min-width: 768px) {
+    .contenedor{
+        width: 90%;
+        margin: 10rem 0 10rem 0;
+    }
+}
+.contenedor-card{
+    background-color: var(--White);
+    text-align: center;
+    border-radius: 6%;
+    box-shadow: 3px 2px 18px -4px rgba(0,0,0,0.48);
+    margin: 10rem 3rem;
+}
+
+@media (min-width: 768px) {
+    .contenedor-card{
+        height: 80rem;
+    }
+}
+
+
+.contenedor-card img{
+    margin-top: 5rem;
+    border-radius: 5%;
+    max-width: 90%;
+}
